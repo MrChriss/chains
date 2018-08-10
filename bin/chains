@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require './lib/chains'
+
+Chains::Dapp.config.validate_all
+# exec %Q(bundle exec pry -I lib -r chains/console/init.rb -e "ed, er = init;")
+exec %Q(bundle exec pry -I lib -r chains/console/init.rb)
